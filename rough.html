@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #section-2-stripe {
+  background-color: #dbe8fd;
+}
+
+/* Section 2 - Stripe Styles */
+.section-2-stripe {
+  margin-bottom: 90px;
+  border: solid black;
+  /* Consider removing for cleaner design */
+}
+
+.stripe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.stripe > div:nth-of-type(1) {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.stripe > div:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border: solid black 1px;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.stripe > div:nth-of-type(2) > div {
+  border: solid black;
+}
+
+@media (max-width: 500px) {
+  .stripe > div:nth-of-type(2) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; /* Adjust gap for smaller screens if needed */
+  }
+}
+@media (max-width: 500px) {
+  .stripe > div:nth-of-type(2) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; /* Adjust gap for smaller screens if needed */
+  }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Section-2-stripe-starts -->
+  <section id="section-2-stripe">
+    <div class="stripe">
+      <div>Millions of sellers at over 500,000 companies beat their number with Apollo</div>
+      <div class="stripe-bottom">
+        <div><img class="img-fluid" src="./section-2-icon1.png" alt=""></div>
+        <div><img class="img-fluid" src="./section-2-icon2.png" alt=""></div>
+        <div><img class="img-fluid" src="./section-2-icon3.png" alt=""></div>
+        <div><img class="img-fluid" src="./section-2-icon4.png" alt=""></div>
+        <div><img class="img-fluid" src="./section-2-icon5.png" alt=""></div>
+        <div><img class="img-fluid" src="./section-2-icon6.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
